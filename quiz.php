@@ -1,4 +1,6 @@
-<!-- <?php
+ <?php
+ include './include/connection.php';
+
 session_start();
 if (!$_SESSION['name']) {
     echo "
@@ -6,8 +8,24 @@ if (!$_SESSION['name']) {
                 window.location='login.php';
             </script>
         ";
+      
+
+}else{
+    $username = $_SESSION['name'];
+      
+    $result = mysqli_query($connect, "SELECT * FROM leaderboard WHERE username='$username' and status=1");
+    $status = mysqli_num_rows($result);
+    if($status==1){
+        echo "
+        <script>
+        alert('You have already filled the form');
+        window.location='login.php';
+        </script>
+    ";
+    exit;
+    }
 }
-?> -->
+?> 
 <!DOCTYPE html>
 <html lang="en">
 <head>

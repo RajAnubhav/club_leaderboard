@@ -12,7 +12,7 @@ if (!$_SESSION['name']) {
 if ($_SERVER['REQUEST_METHOD']=='POST' && $_POST['score']) {
     $score = $_POST['score'];
     $username = $_SESSION['name'];
-    $result = mysqli_query($connect, "UPDATE leaderboard SET score='$score' WHERE username='$username'");
+    $result = mysqli_query($connect, "UPDATE leaderboard SET score='$score' and status=1 WHERE username='$username' ");
    
     echo "
     <script>
@@ -198,7 +198,11 @@ if ($_SERVER['REQUEST_METHOD']=='POST' && $_POST['score']) {
 
         </section>
     </div>
-    <div class="footer_text">
+    <div class="footer_text" style="
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+">
         <a href="./quiz.php" style="text-decoration:none;">
             <button class="quiz_btn">Start quiz</button>
         </a>
