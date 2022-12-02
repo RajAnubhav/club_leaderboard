@@ -4,12 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=1024">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
     <title>Seminar | SARK</title>
     <link rel="shortcut icon" href="https://sitsark.in/assets/img/favicon.ico" type="image/x-icon">
 
     <style>
         /* common */
+
+
         .common {
             display: flex;
             justify-content: center;
@@ -63,7 +66,7 @@
         }
 
         /* for hero */
-        .top_notify{
+        .top_notify {
             text-align: center;
             padding: 20px 0px 0px 0px;
         }
@@ -156,20 +159,24 @@
             border: white 2px solid;
         }
 
-        
     </style>
 </head>
 
 <body>
+    <!-- in mobile view -->
+    <div class="mobile">
+        <h1>Enable Desktop mode to have a perfect view.</h1>
+    </div>
+
     <div class="container">
         <!-- navbar section -->
         <div class="nav" id="nav">
             <table>
                 <th>
-                    <td><a href="#">Home</a></td>
-                    <td><a href="#about">About Us</a></td>
-                    <td><a href="#contacts">Contacts</a></td>
-                    <td><a href="./login.php">Sign in</a></td>
+                <td><a href="#">Home</a></td>
+                <td><a href="#about">About Us</a></td>
+                <td><a href="#contacts">Contacts</a></td>
+                <td><a href="./login.php">Sign in</a></td>
                 </th>
             </table>
         </div>
@@ -242,9 +249,9 @@
                 <img src="./resouces/contact.png" alt="">
             </div>
         </div>
-        
+
     </div>
-    
+
 </body>
 
 </html>
