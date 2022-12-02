@@ -29,6 +29,9 @@ if ($_SERVER['REQUEST_METHOD']=='POST' && $_POST['score']) {
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="./resources_sark/main.css">
+    
+    <title>Leaderboard | SARK</title>
+    <link rel="stylesheet" href="https://sitsark.in/assets/img/favicon.ico" type="image/x-icon">
     <style>
         /* footer */
         .footer_text {
