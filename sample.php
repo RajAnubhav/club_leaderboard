@@ -12,7 +12,7 @@ if (!$_SESSION['name']) {
 if ($_SERVER['REQUEST_METHOD']=='POST' && $_POST['score']) {
     $score = $_POST['score'];
     $username = $_SESSION['name'];
-    $result = mysqli_query($connect, "UPDATE leaderboard SET score='$score' and status=1 WHERE username='$username' ");
+    $result = mysqli_query($connect, "UPDATE leaderboard SET score='$score' , status=1 WHERE username='$username' ");
    
     echo "
     <script>
@@ -64,6 +64,7 @@ if ($_SERVER['REQUEST_METHOD']=='POST' && $_POST['score']) {
     <div id="contain-all" class=" slideout-panel">
         <div class="navbar">
             <ul class="nav-1">
+                <li><a href="index.php">Home</a></li>
                 <li><a href="https://www.sitsark.in/index#about" target="_blank">About Team Sark</a></li>
                 <li><a href="https://www.sitsark.in/our-alumni" target="_blank">Contacts</a></li>
                 <li><a href="logout.php">Logout</a></li>
@@ -199,7 +200,7 @@ if ($_SERVER['REQUEST_METHOD']=='POST' && $_POST['score']) {
         </section>
     </div>
     <div class="footer_text" style="
-    position: fixed;
+    position: static;
     bottom: 0px;
     width: 100%;
 ">

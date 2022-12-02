@@ -176,8 +176,7 @@ submitBtn.addEventListener('click', ()=>{
         if(answer === quizData[currentQuiz].correct){
             score++ 
         }
-        console.log(score);
-
+        
         currentQuiz++ 
 
     

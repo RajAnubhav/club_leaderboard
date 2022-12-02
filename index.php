@@ -62,6 +62,11 @@
         }
 
         /* for hero */
+        .top_notify{
+            text-align: center;
+            padding: 20px 0px 0px 0px;
+        }
+
         .hero {
             display: flex;
             justify-content: center;
@@ -157,19 +162,25 @@
 <body>
     <div class="container">
         <!-- navbar section -->
-        <div class="nav">
+        <div class="nav" id="nav">
             <table>
                 <th>
-                <td><a href="#">Home</a></td>
-                <td><a href="#about">About Us</a></td>
-                <td><a href="#contacts">Contacts</a></td>
-                <td><a href="./login.php">Sign in</a></td>
+                    <td><a href="#">Home</a></td>
+                    <td><a href="#about">About Us</a></td>
+                    <td><a href="#contacts">Contacts</a></td>
+                    <td><a href="./login.php">Sign in</a></td>
                 </th>
             </table>
         </div>
 
+
+        <!-- After the navbar, Welcome freshers!! -->
+        <div class="top_notify">
+            <h1>Welcome to the seminar!</h1>
+        </div>
+
         <!-- hero section -->
-        <div class="hero common">
+        <div class="hero common" style="margin: 25px 100px 100px 100px;" id="hero_copy">
             <div class="left">
                 <h1>
                     Hello guys! My name is Anubhav.
@@ -232,6 +243,7 @@
         </div>
         
     </div>
+    
 </body>
 
 </html>
